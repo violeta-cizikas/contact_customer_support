@@ -72,7 +72,7 @@ require('./process.php');
 
 				</div>
 
-			<div>
+				<div>
 
 					<input type="radio" name="department" id="customerDepartment" value='Klientų aptarnavimo skyrius' <?php echo $department === "Klientų aptarnavimo skyrius" ?"checked": "" ?>>
 					<label for="customerDepartment">Klientų aptarnavimo skyriumi</label> 
