@@ -50,7 +50,7 @@ require('./process.php');
 	                <?php if(!empty($phoneNumberErr)): ?>
 	                <p class="error-alert"><?php echo $phoneNumberErr?></p>
 	                <?php endif;?>
-            	</div>
+				</div>
 
         	</div>
 
@@ -58,7 +58,7 @@ require('./process.php');
 
             <div class="input-group radio-input "><br>
             	<!-- for susijes su id -->
-                <div>
+				<div>
 
 	                <input type="radio" name="department" id="sales" value='Pardavimų skyrius' <?php echo $department === "Pardavimų skyrius" ?"checked": "" ?>>
 	                <label for="sales">Pardavimų skyriumi</label>
@@ -72,7 +72,7 @@ require('./process.php');
 
             	</div>
 
-                <div>
+			<div>
 
 	                <input type="radio" name="department" id="customerDepartment" value='Klientų aptarnavimo skyrius' <?php echo $department === "Klientų aptarnavimo skyrius" ?"checked": "" ?>>
 	                <label for="customerDepartment">Klientų aptarnavimo skyriumi</label> 
@@ -89,10 +89,10 @@ require('./process.php');
 
                 <select name="subject" id="subject">
 
-                	<!-- disabled -->
-                	<option value="">PASIRINKITE TEMĄ</option>
-  					<option value="Problemos sprendimas">Problemos sprendimas</option>
-  					<option value="Prekės grąžinimas">Prekės grąžinimas</option>
+					<!-- disabled -->
+					<option value="">PASIRINKITE TEMĄ</option>
+					<option value="Problemos sprendimas">Problemos sprendimas</option>
+					<option value="Prekės grąžinimas">Prekės grąžinimas</option>
 
                 </select>
 
@@ -144,7 +144,7 @@ require('./process.php');
     </div>
 
     <?php endif;?>
-    
+
 </body>
 
 </html>
