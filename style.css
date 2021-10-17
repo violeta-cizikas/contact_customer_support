@@ -3,11 +3,13 @@
 }
 
 .container {
+	max-width: 100%;
 	width: 500px;
 	margin: 0 auto;
 	margin-top: 50px;
 	border: 1px solid #cdd0cb;
 	padding-bottom: 30px;
+	box-sizing: border-box;
 }
 
 form {
@@ -16,23 +18,26 @@ form {
 
 .input-group,
 input[type="text"] {
-	width: 400px;
+	width: 100%;
 }
 
-.input-group.halfWidth,
+.input-group.halfWidth {
+	width: calc(50% - 10px);
+}
+
 .input-group.halfWidth input[type="text"] {
-	width: 180px;
+	width: 100%;
 }
 
 .flexContainer {
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
+	width: 100%;
 }
 
 select,
 textarea {
-	width: 400px;
+	width: 100%;
 	padding: 0;
 }
 
@@ -47,7 +52,7 @@ select {
 .displayFlex {
 	display: flex;
 	justify-content: center;
-	width: 400px;
+	width: 100%;
 }
 
 button {
@@ -61,9 +66,9 @@ button {
 	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.58);
 }
 
-/*button:focus {
+button:focus {
 	outline: none;
-}*/
+}
 
 .success_container {
 	max-width: 450px;
@@ -82,16 +87,13 @@ button {
 }
 
 .header {
-	width: 500px;
-	height: 100px;
+	width: 100%;
 	background-color: #ffc764;
 	color: white;
 	text-align: center;
-	line-height: 100px;
 	margin-bottom: 50px;
-}
-h1 {
-	margin-bottom: 30px;
+	padding: 5px;
+	box-sizing: border-box;
 }
 
 p.success_message {
@@ -122,3 +124,4 @@ label {
 	border-color: tomato;
 	background-color: rgb(252, 178, 166);
 }
+
